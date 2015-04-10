@@ -8,7 +8,7 @@ class cpuinfo(File):
     """
 
     def __len__(self):
-        return len(self.read())
+        return len(self._read())
 
     def _parse(self, content):
         lines = content.splitlines()
